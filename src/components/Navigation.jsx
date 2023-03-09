@@ -5,7 +5,7 @@ const Navigation = ({current, setCurrent}) => {
   return (
     <div>
       <nav class = "header">
-        <h1>Christopher Clark</h1>
+        <h1>Mugees Khaki</h1>
         <div className = "menu">
           <p className = "navItem" onClick={()=>setCurrent("about me")}>About</p>
           <p className = "navItem" onClick={()=>setCurrent("portfolio")}>Portfolio</p>
