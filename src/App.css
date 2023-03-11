@@ -149,16 +149,14 @@
   }
   
 
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(243, 164, 130);
-  padding: 1rem;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
 
 nav {
   display: flex;
@@ -171,7 +169,7 @@ nav h1 {
   font-size: 2.2rem;
   font-weight: 600;
   margin: 0;
-  color: rgb(143, 18, 18);
+  color: rgb(8, 6, 123);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -222,9 +220,10 @@ nav ul li a:hover {
   
   .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content:right;
     width: 50%;
     flex-wrap: wrap;
+    color: #58628f;
   }
   
 
@@ -239,21 +238,25 @@ nav ul li a:hover {
   align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  text-align:left;;
 }
 
 .picContainer {
-  width: 200px;
-  height: 200px;
-  border-radius: 0;
-  overflow: hidden;
-  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px; 
+  margin: auto;
+  text-align: center;
 }
 
 .pic {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: 400px; 
   object-fit: cover;
+  box-shadow: 0 0 10px rgba(144, 28, 28, 0.5);
 }
+
 
 .show-more-button {
   background-color: #1E90FF;
@@ -274,3 +277,26 @@ nav ul li a:hover {
 }
 
 
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navItem {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  cursor:crosshair;
+
+}
+
+.active {
+  color: blue;
+}
+
+
+.about p {
+  width: 80%;
+  margin: 0 auto;
+}

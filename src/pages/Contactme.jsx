@@ -52,7 +52,7 @@ function Contactme(){
 
   return(
     <div className='contact-container'>
-      <h1>Contact</h1>
+      <h1>Leave a message!</h1>
       <form>
         <div className="form-container">
           <div className="form-section">
@@ -69,7 +69,7 @@ function Contactme(){
           </div>
 
           <div className="form-section">
-            <label htmlFor="email">Emailad:</label>
+            <label htmlFor="email">Your email adress:</label>
             <input
               type="email"
               className="form-control"
@@ -82,7 +82,7 @@ function Contactme(){
           </div>
 
           <div className="form-section">
-            <label htmlFor="message">Message here:</label>
+            <label htmlFor="message">Text:</label>
             <textarea
               className="form-control"
               id="message"
@@ -96,7 +96,7 @@ function Contactme(){
           {errorMessage && <div className="error-message">{errorMessage}</div>}
 
           <button className='form-button' type="button" onClick={handleFormSubmit}>
-              aaaaa
+              Submit your message
           </button>
         </div>
       </form>
